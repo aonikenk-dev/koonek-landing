@@ -1,0 +1,83 @@
+---
+import Isotipo from './Isotipo.astro';
+import LangSwitch from './LangSwitch.astro';
+import data from '../data/site.json';
+const { nav, site } = data;
+---
+
+<nav id="nav">
+  <a href="#splash" class="nav-left">
+    <Isotipo size={26} />
+    <div class="nav-wm">{site.name}<span class="dot">{site.badge}</span></div>
+  </a>
+
+  <ul class="nav-links">
+    <li>
+      <a href="#features" data-es>{nav.es.features}</a>
+      <a href="#features" data-en>{nav.en.features}</a>
+    </li>
+    <li>
+      <a href="#ai" data-es>{nav.es.ai}</a>
+      <a href="#ai" data-en>{nav.en.ai}</a>
+    </li>
+    <li>
+      <a href="#about" data-es>{nav.es.about}</a>
+      <a href="#about" data-en>{nav.en.about}</a>
+    </li>
+    <li>
+      <a href="#contact" data-es>{nav.es.contact}</a>
+      <a href="#contact" data-en>{nav.en.contact}</a>
+    </li>
+  </ul>
+
+  <div class="nav-right">
+    <LangSwitch />
+    <a href="#contact" class="nav-cta" data-es>{nav.es.cta}</a>
+    <a href="#contact" class="nav-cta" data-en>{nav.en.cta}</a>
+  </div>
+</nav>
+
+<style lang="scss">
+  @use '../styles/tokens' as *;
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 24px 48px;
+    transition: background .4s, padding .4s, border-bottom .4s;
+    pointer-events: none; opacity: 0;
+    &.visible  { pointer-events: all; opacity: 1; transition: background .4s, padding .4s, opacity .4s; }
+    &.scrolled { background: var(--nav-bg); backdrop-filter: blur(12px); padding: 16px 48px; border-bottom: 1px solid var(--border); }
+  }
+  .nav-left {
+    display: flex; align-items: center; gap: 10px; text-decoration: none;
+  }
+  .nav-wm {
+    font-family: $font-display; font-weight: 800; font-size: 18px;
+    color: var(--text); letter-spacing: -0.04em; display: flex; align-items: baseline;
+    .dot { color: var(--moss); font-family: $font-mono; font-weight: 400; font-size: 11px; margin-left: 6px; letter-spacing: .1em; }
+  }
+  .nav-links {
+    display: flex; gap: 36px; list-style: none;
+    a {
+      font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none; transition: color .2s; position: relative;
+      &::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1px; background: var(--moss); transition: width .3s; }
+      &:hover { color: var(--text); }
+      &:hover::after { width: 100%; }
+    }
+  }
+  .nav-right { display: flex; align-items: center; gap: 16px; }
+  .nav-cta {
+    font-family: $font-mono; font-size: 11px; letter-spacing: .15em; text-transform: uppercase;
+    color: var(--moss); text-decoration: none; border: 1px solid var(--moss);
+    padding: 8px 18px; transition: background .2s, color .2s;
+    &:hover { background: var(--moss); color: #fff; }
+  }
+
+  @media(max-width: $bp-mobile) {
+    nav { padding: 18px 24px; }
+    nav.scrolled { padding: 12px 24px; }
+    .nav-links { display: none; }
+  }
+</style>

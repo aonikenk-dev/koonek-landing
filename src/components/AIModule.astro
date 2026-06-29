@@ -1,0 +1,37 @@
+---
+import data from '../data/site.json';
+const { ai } = data;
+---
+
+<section id="ai" class="content">
+  <div class="s-inner">
+    <div class="s-head reveal">
+      <div class="eyebrow" data-es>{ai.es.eyebrow}</div>
+      <div class="eyebrow" data-en>{ai.en.eyebrow}</div>
+      <h2 class="s-title" data-es>
+        {ai.es.title[0]}<br><span class="dim">{ai.es.title[1]}</span> {ai.es.title[2]}
+      </h2>
+      <h2 class="s-title" data-en>
+        {ai.en.title[0]}<br><span class="dim">{ai.en.title[1]}</span> {ai.en.title[2]}
+      </h2>
+      <p class="section-desc" data-es>{ai.es.body}</p>
+      <p class="section-desc" data-en>{ai.en.body}</p>
+    </div>
+
+    <div class="ai-grid">
+      {ai.items.map((item, i) => (
+        <div class={`ai-card reveal d${i + 1}`}>
+          <span class="ai-badge">{`0${i + 1}`}</span>
+          <div class="ai-name" data-es>{item.es.name}</div>
+          <div class="ai-name" data-en>{item.en.name}</div>
+          <div class="ai-desc" data-es>{item.es.desc}</div>
+          <div class="ai-desc" data-en>{item.en.desc}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .section-desc { font-size:13px; color:var(--muted); max-width:540px; line-height:1.9; margin-top:8px; }
+</style>

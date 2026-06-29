@@ -1,0 +1,43 @@
+// ── Brand tokens — aonikenk.dev Brand Manual v2.0, "Principal Claro" ──
+$bg       : #F0F4F8;
+$surface  : #FFFFFF;
+$surface2 : #E8EDF4;
+$border   : #D0D8E4;
+$text     : #0D0F12;
+$text2    : #2A3140;
+$muted    : #4A5568;
+$subtle   : #8896A8;
+$sienna   : #C0623A;
+$ember    : #E07A52;
+$moss     : #3D6B4F;
+$ice      : #7BAFC4;
+$obsidian : #0D0F12;
+
+// ── CSS custom properties (used in JS too) ────────────────────
+:root {
+  --bg       : #{$bg};
+  --surface  : #{$surface};
+  --surface2 : #{$surface2};
+  --border   : #{$border};
+  --text     : #{$text};
+  --text2    : #{$text2};
+  --muted    : #{$muted};
+  --subtle   : #{$subtle};
+  --sienna   : #{$sienna};
+  --ember    : #{$ember};
+  --moss     : #{$moss};
+  --ice      : #{$ice};
+  --obsidian : #{$obsidian};
+  --nav-bg   : rgba(240, 244, 248, .92);
+}
+
+// ── Typography ────────────────────────────────────────────────
+$font-display : 'Syne', sans-serif;
+$font-mono    : 'DM Mono', monospace;
+
+// ── Breakpoints ───────────────────────────────────────────────
+$bp-mobile : 900px;
+
+// ── Spacing ───────────────────────────────────────────────────
+$section-pad   : 120px 48px;
+$section-pad-m : 80px 24px;

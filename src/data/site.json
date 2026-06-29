@@ -1,0 +1,172 @@
+{
+  "site": {
+    "name": "Koonek",
+    "badge": "HOP",
+    "tagline": "Healthcare Operations Platform",
+    "slogan": "Pushing your practice forward",
+    "cover_slogan": "Crafted at the edge · 🗻",
+    "location": "Patagonia, Argentina",
+    "email": "hello@aonikenk.dev",
+    "by": "aonikenk.dev"
+  },
+  "splash": {
+    "es": { "tagline": "Plataforma de Operaciones de Salud", "slogan": "Impulsando tu práctica hacia adelante." },
+    "en": { "tagline": "Healthcare Operations Platform", "slogan": "Pushing your practice forward." }
+  },
+  "hero": {
+    "es": {
+      "title": ["Tu consultorio,", "sin", "el caos."],
+      "sub": "Una plataforma, todo tu consultorio.",
+      "body": "Koonek centraliza pacientes, turnos, historias clínicas y recetas en un solo lugar, potenciado con inteligencia artificial. Pensado para que cada profesional dedique su tiempo a atender, no a administrar.",
+      "cta_primary": "Solicitar demo",
+      "cta_secondary": "Ver módulos ↓"
+    },
+    "en": {
+      "title": ["Your practice,", "without", "the chaos."],
+      "sub": "One platform, your whole practice.",
+      "body": "Koonek centralizes patients, appointments, health records, and prescriptions in one place, powered by AI. Built so every professional spends their time caring, not administrating.",
+      "cta_primary": "Request a demo",
+      "cta_secondary": "See modules ↓"
+    }
+  },
+  "features": {
+    "es": {
+      "eyebrow": "Koonek Flow",
+      "title": ["Todo lo que", "tu consultorio", "necesita."],
+      "body": "Koonek centraliza la operación de tu práctica en una sola plataforma. Desde el registro de pacientes hasta la agenda, las historias clínicas y las recetas — todo accesible desde cualquier dispositivo."
+    },
+    "en": {
+      "eyebrow": "Koonek Flow",
+      "title": ["Everything", "your practice", "needs."],
+      "body": "Koonek centralizes your practice's operations in a single platform. From patient registration to scheduling, health records, and prescriptions — all accessible from any device."
+    },
+    "items": [
+      {
+        "id": "patients",
+        "icon": "patient",
+        "es": { "name": "Gestión de Pacientes", "desc": "Registro completo con datos personales, obra social, historial de visitas y documentación adjunta. Búsqueda instantánea por nombre o documento." },
+        "en": { "name": "Patient Management", "desc": "Complete registration with personal data, health insurance, visit history, and attached documentation. Instant search by name or ID." }
+      },
+      {
+        "id": "appointments",
+        "icon": "calendar",
+        "es": { "name": "Gestión de Turnos", "desc": "Agenda visual semanal y diaria. Confirmación de turnos, historial de asistencia y recordatorios automáticos." },
+        "en": { "name": "Appointment Management", "desc": "Visual weekly and daily schedule. Appointment confirmation, attendance history, and automatic reminders." }
+      },
+      {
+        "id": "healthRecords",
+        "icon": "clipboard",
+        "es": { "name": "Historias Clínicas", "desc": "Evolución por consulta con diagnósticos, tratamientos y archivos adjuntos. Trazabilidad completa del historial del paciente." },
+        "en": { "name": "Health Records", "desc": "Evolutionary record per visit with diagnoses, treatments, and attached files. Complete traceability of the patient's history." }
+      },
+      {
+        "id": "prescriptions",
+        "icon": "prescription",
+        "es": { "name": "Generación de Recetas", "desc": "Creación y emisión de recetas desde la consulta. Plantilla editable con datos del profesional y del paciente precargados." },
+        "en": { "name": "Prescription Generation", "desc": "Creation and issuance of prescriptions from the consultation. Editable template with doctor and patient data pre-filled." }
+      },
+      {
+        "id": "reports",
+        "icon": "reports",
+        "es": { "name": "Reportes y Métricas", "desc": "Tablero con métricas de actividad: pacientes por grupo de edad, motivos de consulta frecuentes y productividad mensual." },
+        "en": { "name": "Reports and Metrics", "desc": "Dashboard with activity metrics: patients by age group, frequent consultation reasons, and monthly productivity." }
+      },
+      {
+        "id": "security",
+        "icon": "shield",
+        "es": { "name": "Seguridad y Accesos", "desc": "Roles diferenciados (profesional, recepción, administración) y datos clínicos protegidos, accesibles solo para usuarios autorizados." },
+        "en": { "name": "Security and Access", "desc": "Differentiated roles (doctor, receptionist, admin) and protected clinical data, accessible only to authorized users." }
+      }
+    ]
+  },
+  "ai": {
+    "es": {
+      "eyebrow": "Koonek AI",
+      "title": ["Inteligencia artificial,", "aplicada a", "tu práctica."],
+      "body": "Koonek integra inteligencia artificial para asistir en la decisión clínica, automatizar tareas administrativas y extraer información útil de tus historias clínicas."
+    },
+    "en": {
+      "eyebrow": "Koonek AI",
+      "title": ["Artificial intelligence,", "applied to", "your practice."],
+      "body": "Koonek integrates artificial intelligence to assist clinical decision-making, automate administrative tasks, and extract useful insights from your health records."
+    },
+    "items": [
+      {
+        "id": "lawen",
+        "es": { "name": "Lawen — Koonek Copilot", "desc": "Asistente conversacional que responde preguntas sobre tus pacientes, turnos y recetas usando los datos de tu propio consultorio." },
+        "en": { "name": "Lawen — Koonek Copilot", "desc": "Conversational assistant that answers questions about your patients, appointments, and prescriptions using your own practice's data." }
+      },
+      {
+        "id": "agents",
+        "es": { "name": "Koonek Agents", "desc": "Automatizaciones configurables: importación de estudios, procesamiento de historias clínicas y alertas de seguimiento." },
+        "en": { "name": "Koonek Agents", "desc": "Configurable automations: study imports, health record processing, and follow-up alerts." }
+      },
+      {
+        "id": "insight",
+        "es": { "name": "Koonek Insight", "desc": "Análisis clínico y extracción de información: tendencias de consulta, controles atrasados y oportunidades de seguimiento." },
+        "en": { "name": "Koonek Insight", "desc": "Clinical analysis and information extraction: consultation trends, overdue follow-ups, and care opportunities." }
+      }
+    ]
+  },
+  "showcase": {
+    "es": {
+      "eyebrow": "En acción",
+      "title": ["Así se ve", "Koonek", "en el día a día."],
+      "body": "Una mirada rápida a los flujos principales del sistema."
+    },
+    "en": {
+      "eyebrow": "In action",
+      "title": ["This is what", "Koonek", "looks like day to day."],
+      "body": "A quick look at the system's core workflows."
+    },
+    "items": [
+      {
+        "id": "appointments",
+        "es": { "name": "Agenda de turnos", "desc": "Arrastrá, soltá y reprogramá turnos en segundos." },
+        "en": { "name": "Appointment scheduling", "desc": "Drag, drop, and reschedule appointments in seconds." }
+      },
+      {
+        "id": "healthRecords",
+        "es": { "name": "Historia clínica", "desc": "Toda la evolución del paciente, organizada y a un click." },
+        "en": { "name": "Health record", "desc": "The patient's full evolution, organized and one click away." }
+      },
+      {
+        "id": "lawen",
+        "es": { "name": "Consulta a Lawen", "desc": "Preguntale a tu copiloto por cualquier dato del consultorio." },
+        "en": { "name": "Ask Lawen", "desc": "Ask your copilot about any data in your practice." }
+      }
+    ]
+  },
+  "about": {
+    "es": {
+      "eyebrow": "Origen",
+      "title": "De dónde viene el nombre",
+      "manifesto": "\"Koonek\" deriva del vocablo tehuelche kon (gente, comunidad). El nombre evoca la relación entre el profesional y sus pacientes — una comunidad de cuidado — construida desde el territorio patagónico."
+    },
+    "en": {
+      "eyebrow": "Origin",
+      "title": "Where the name comes from",
+      "manifesto": "\"Koonek\" derives from the Tehuelche word kon (people, community). The name evokes the relationship between a healthcare professional and their patients — a community of care — built from Patagonian territory."
+    }
+  },
+  "contact": {
+    "es": {
+      "title": ["¿Listo para", "modernizar tu", "<acc>consultorio?</acc>"],
+      "body": "Pedí una demo y te mostramos cómo Koonek se adapta a tu práctica.",
+      "cta": "Escribinos →"
+    },
+    "en": {
+      "title": ["Ready to", "modernize your", "<acc>practice?</acc>"],
+      "body": "Request a demo and we'll show you how Koonek fits your practice.",
+      "cta": "Get in touch →"
+    }
+  },
+  "nav": {
+    "es": { "features": "Módulos", "ai": "Koonek AI", "about": "Origen", "contact": "Contacto", "cta": "Solicitar demo" },
+    "en": { "features": "Modules", "ai": "Koonek AI", "about": "Origin", "contact": "Contact", "cta": "Request a demo" }
+  },
+  "footer": {
+    "es": { "features": "Módulos", "ai": "Koonek AI", "about": "Origen", "contact": "Contacto" },
+    "en": { "features": "Modules", "ai": "Koonek AI", "about": "Origin", "contact": "Contact" }
+  }
+}

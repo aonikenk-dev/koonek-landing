@@ -1,0 +1,35 @@
+---
+import data from '../data/site.json';
+const { showcase } = data;
+---
+
+<section id="showcase" class="content">
+  <div class="s-inner">
+    <div class="s-head reveal">
+      <div class="eyebrow" data-es>{showcase.es.eyebrow}</div>
+      <div class="eyebrow" data-en>{showcase.en.eyebrow}</div>
+      <h2 class="s-title" data-es>
+        {showcase.es.title[0]} <span class="dim">{showcase.es.title[1]}</span> {showcase.es.title[2]}
+      </h2>
+      <h2 class="s-title" data-en>
+        {showcase.en.title[0]} <span class="dim">{showcase.en.title[1]}</span> {showcase.en.title[2]}
+      </h2>
+    </div>
+
+    <div class="sc-grid">
+      {showcase.items.map((item, i) => (
+        <div class={`sc-card reveal d${i + 1}`}>
+          <div class="sc-frame">
+            <!-- Placeholder — swap for a real GIF/screen recording of this flow -->
+            <span data-es>GIF · {item.es.name}</span>
+            <span data-en>GIF · {item.en.name}</span>
+          </div>
+          <div class="sc-name" data-es>{item.es.name}</div>
+          <div class="sc-name" data-en>{item.en.name}</div>
+          <div class="sc-desc" data-es>{item.es.desc}</div>
+          <div class="sc-desc" data-en>{item.en.desc}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

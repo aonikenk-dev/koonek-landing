@@ -1,0 +1,27 @@
+---
+import data from '../data/site.json';
+const { contact, site } = data;
+
+const esAcc = contact.es.title[2].replace('<acc>', '<span class="acc">').replace('</acc>', '</span>');
+const enAcc = contact.en.title[2].replace('<acc>', '<span class="acc">').replace('</acc>', '</span>');
+---
+
+<section id="contact" class="content">
+  <div class="s-inner">
+    <div class="cnt-eyebrow" data-es>Koonek HOP</div>
+    <div class="cnt-eyebrow" data-en>Koonek HOP</div>
+
+    <h2 class="cnt-title reveal" data-es>
+      {contact.es.title[0]}<br>{contact.es.title[1]} <span set:html={esAcc} />
+    </h2>
+    <h2 class="cnt-title reveal" data-en>
+      {contact.en.title[0]}<br>{contact.en.title[1]} <span set:html={enAcc} />
+    </h2>
+
+    <p class="cnt-text reveal" data-es>{contact.es.body}</p>
+    <p class="cnt-text reveal" data-en>{contact.en.body}</p>
+
+    <a href={`mailto:${site.email}?subject=Koonek HOP — Demo`} class="btn-contact reveal" data-es>{contact.es.cta}</a>
+    <a href={`mailto:${site.email}?subject=Koonek HOP — Demo`} class="btn-contact reveal" data-en>{contact.en.cta}</a>
+  </div>
+</section>
