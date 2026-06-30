@@ -23,14 +23,12 @@ const { site, splash } = data;
       <Isotipo size={110} />
     </div>
     <div class="splash-wm">
-      {site.name}<span class="dot">{site.badge}</span><span class="cursor-blink"></span>
+      {site.name}<span class="dot">{site.badge}</span>
     </div>
-    <div class="splash-tagline" data-es>{splash.es.tagline}</div>
-    <div class="splash-tagline" data-en>{splash.en.tagline}</div>
+    <div class="splash-tagline">{splash.en.tagline}</div>
     <div style="margin-top:18px;">
-      <span class="splash-slogan" data-es>{splash.es.slogan}</span>
-      <span class="splash-slogan" data-en>{splash.en.slogan}</span>
-      <span class="splash-location">· {site.location}</span>
+      <span class="splash-slogan">{splash.en.slogan}</span>
+      <!-- <span class="splash-location">· {site.location}</span> -->
     </div>
   </div>
 

@@ -2,7 +2,7 @@
   "site": {
     "name": "Koonek",
     "badge": "HOP",
-    "tagline": "Healthcare Operations Platform",
+    "tagline": "AI-powered Healthcare Operations Platform",
     "slogan": "Pushing your practice forward",
     "cover_slogan": "Crafted at the edge · 🗻",
     "location": "Patagonia, Argentina",
@@ -10,8 +10,8 @@
     "by": "aonikenk.dev"
   },
   "splash": {
-    "es": { "tagline": "Plataforma de Operaciones de Salud", "slogan": "Impulsando tu práctica hacia adelante." },
-    "en": { "tagline": "Healthcare Operations Platform", "slogan": "Pushing your practice forward." }
+    "es": { "tagline": "AI-powered Healthcare Operations Platform", "slogan": "Pushing your practice forward." },
+    "en": { "tagline": "AI-powered Healthcare Operations Platform", "slogan": "Pushing your practice forward." }
   },
   "hero": {
     "es": {
