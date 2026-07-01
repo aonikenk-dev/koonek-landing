@@ -20,9 +20,7 @@ const { showcase } = data;
       {showcase.items.map((item, i) => (
         <div class={`sc-card reveal d${i + 1}`}>
           <div class="sc-frame">
-            <!-- Placeholder — swap for a real GIF/screen recording of this flow -->
-            <span data-es>GIF · {item.es.name}</span>
-            <span data-en>GIF · {item.en.name}</span>
+           <img src={item.imageUrl} alt={item.en.name} width="100%" height="100%" />
           </div>
           <div class="sc-name" data-es>{item.es.name}</div>
           <div class="sc-name" data-en>{item.en.name}</div>

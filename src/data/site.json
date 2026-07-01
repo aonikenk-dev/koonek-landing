@@ -122,16 +122,19 @@
     "items": [
       {
         "id": "appointments",
+        "imageUrl": "/showcase/appointments.gif",
         "es": { "name": "Agenda de turnos", "desc": "Arrastrá, soltá y reprogramá turnos en segundos." },
         "en": { "name": "Appointment scheduling", "desc": "Drag, drop, and reschedule appointments in seconds." }
       },
       {
         "id": "healthRecords",
+        "imageUrl": "/showcase/health-records.gif",
         "es": { "name": "Historia clínica", "desc": "Toda la evolución del paciente, organizada y a un click." },
         "en": { "name": "Health record", "desc": "The patient's full evolution, organized and one click away." }
       },
       {
         "id": "lawen",
+        "imageUrl": "/showcase/lawen-consultation.gif",
         "es": { "name": "Consulta a Lawen", "desc": "Preguntale a tu copiloto por cualquier dato del consultorio." },
         "en": { "name": "Ask Lawen", "desc": "Ask your copilot about any data in your practice." }
       }
